@@ -2,7 +2,7 @@
 #define MAIN_H
 
 void print_alphabet(void);
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 int _islower(int C);
 int _isalpha(int C);
 int print_sign(int n);
