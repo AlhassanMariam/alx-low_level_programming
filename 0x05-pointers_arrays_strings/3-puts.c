@@ -2,7 +2,7 @@
 /**
  * _puts - prints a string
  * @str: string to be pointed
- * Return: 0
+ * Return: nothing
  */
 void _puts(char *str)
 {
