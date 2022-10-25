@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * _prints - prints a string
+ * _puts - prints a string
  * @str: string to be pointed
  * Return: 0
  */
