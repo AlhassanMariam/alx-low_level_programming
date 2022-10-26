@@ -2,20 +2,18 @@
 /**
  * puts2 - print half of a string
  * @str: string
- * Return: nil
+ * Return: print
  */
 void puts2(char *str)
 {
 	int i = 0;
-	int n;
 
-	for (n = 0; str[n] != 0; n++)
-		for (i = 0; i < n; i++)
-		{
-			if (i % 2 == 0)
-			{
-				_putchar(str[i]);
-			}
-		}
-	_putchar(10);
+	for (; str[i] != '\0'; i++)
+	{
+		if (i % 2 == 0)
+			_putchar(str[i]);
+		else
+			continue;
+	}
+	_putchar('\n');
 }
