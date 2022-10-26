@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * puts2 - print half of a string
  * @str: string
