@@ -9,15 +9,15 @@ int main(void)
 	a[2] = 1024;
 	p = &n;
 	/*
-	 * - you are not allowed to use the varible
-	 *
+	 * write your codes here
+	 * Remember:
+	 * - you are not allowed to code anything
 	 * - you are not allowed to modify p
-	 *
-	 * - only code on line 19
-	 *
+	 * - only one statement
+	 * - you are not allowed to use comma
 	 */
 	*(p + 5) = 98;
-
+	/* ...so that this prints 98\n */
 	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
