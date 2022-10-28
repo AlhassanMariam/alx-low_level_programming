@@ -9,13 +9,13 @@ char *cap_string(char *s)
 {
 	int x, y;
 
-	char separator[] = " \t\n,;.!?\"(){}";
+	char seprator[] = " \t\n,;.!?\"(){}";
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
-		 for (y = 0; separator[y] != '\0'; y++)
+		 for (y = 0; seprator[y] != '\0'; y++)
 		 {
-		if (x == 0 || s[x - 1] == separator[y])
+		if (x == 0 || s[x - 1] == seprator[y])
 		{
 			if (s[x] > 97 && s[x] < 123)
 				s[x] -= 32;
