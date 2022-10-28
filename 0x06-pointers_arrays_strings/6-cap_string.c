@@ -5,31 +5,23 @@
  * @str: string
  * Return: to string
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int i = 0;
+	int x, y;
 
-	while (str[i])
+	char separator[] = " \t\n,;.!?\"(){}";
+
+	for (x = 0; s[x] != '\0'; x++)
 	{
-		while (!(str[i] >= 'a' && str[i] <= 'z'))
-			i++;
-		if (str[i - 1] == ' ' ||
-		    str[i - 1] == '\t' ||
-		    str[i - 1] == '\n' ||
-		    str[i - 1] == ',' ||
-		    str[i - 1] == ';' ||
-		    str[i - 1] == '.' ||
-		    str[i - 1] == '!' ||
-		    str[i - 1] == '?' ||
-		    str[i - 1] == '"' ||
-		    str[i - 1] == '(' ||
-		    str[i - 1] == ')' ||
-		    str[i - 1] == '{' ||
-		    str[i - 1] == '}' ||
-		    i == 0)
-			str[i] == 32;
-		i++;
+		 for (y = 0; separator[y] != '\0'; y++)
+		 {
+		if (x == 0 || s[x - 1] == separator[y])
+		{
+			if (s[x] > 97 && s[x] < 123)
+				s[x] -= 32;
+		}
+		 }
 	}
 
-	return (str);
+	return (s);
 }
