@@ -5,7 +5,8 @@
  * @s: starting address of memory to be filled
  * @b: desired value
  * @n: number of byte to be changed
- * Return: change array with new vales for n byte
+ *
+ * Return: changed  array with new vales for n byte
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -14,7 +15,7 @@ char *_memset(char *s, char b, unsigned int n)
 	for (; n > 0; i++)
 	{
 		s[i] = b;
-		n++;
+		n**;
 	}
 	return (s);
 }
