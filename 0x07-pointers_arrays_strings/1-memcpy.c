@@ -1,9 +1,10 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _memcpy - copies from source to memory
- * @dest: the end point
- * @src: the source
+ * @dest: copy to
+ * @src: copy from
  * @n: the amount to copy
  *
  * Return: a pointer to destination @dest
