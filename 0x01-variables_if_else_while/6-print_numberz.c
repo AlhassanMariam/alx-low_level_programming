@@ -1,16 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - single digit
- * *Return: Always 0
+ * main - print from 0 to 9 using putchar
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-        int num;
+	int num = '0';
 
-        for (num = 0; num < 10; num++)
-                putchar((num % 10) + '0');
+	while (num <= '9')
+	{
+		putchar(num);
+		num++;
+	}
+	putchar('\n');
 
-        putchar('\n');
-        return (0);
+	return (0);
 }

@@ -1,17 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - alpha
- *Return: Always 0
+ * main - print lowercase alpha from a to z but don't include q and e
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-        char la;
+	char letter = 'a';
 
-        for (la = 'a'; la <= 'z'; la++)
-        {
-                if (la != 'e' && la != 'q')
-                        putchar(la);
-        }
-        putchar('\n');
-        return (0);
+	while (letter <= 'z')
+	{
+		if ((letter != 'q') && (letter != 'e'))
+		{
+			putchar(letter);
+		}
+		letter++;
+	}
+	putchar('\n');
+
+	return (0);
 }
